@@ -1,5 +1,6 @@
 import React from "react";
-import { FaCheck, FaChevronDown, FaExclamationCircle } from "react-icons/fa";
+import { FaCheck, FaExclamationCircle } from "react-icons/fa";
+import flagImage from "../assets/flag.png"
 
 const TopBar = () => {
   return (
@@ -11,7 +12,7 @@ const TopBar = () => {
       <div className="flex space-x-6 items-center">
         <div className="flex space-x-2 items-center">
           <p>Eng</p>
-          <FaChevronDown />
+          <img src={flagImage} alt="" className="w-[1rem]"/>
         </div>
         <p>FAQ</p>
         <div className="flex space-x-2 items-center">
