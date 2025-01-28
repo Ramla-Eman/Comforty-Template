@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-text-color: #272343; /* Gray Scales/Black */
+  --color-buttons-Color: #029fae; /* Accents/Accents */
+  --color-my-color3: #007580; /* Accents/Dark Accents */
+  --color-my-color4: #636270; /* Gray Scales/Dark Gray */
+  --color-my-color5: #9a9caa; /* Gray Scales/Gray */
+  --color-my-color6: #f0f2f3; /* Gray Scales/Off White */
+  --color-my-color7: #01ad5a; /* Status/Success */
+  --color-my-color8: #f5813f; /* Status/Warning */
+  --color-my-color9: #000000; /* Dark */
+
+  /* Font Family's */
+  --font-family-base: "Inter", serif; /* Inter Font Family */
+  --font-family-heading: "Poppins", serif; /* Poppins Font Family */
+  --font-font-fmily3: "Roboto", serif; /* Roboto Font Family */
+  --font-font-fmily4: "Open Sans", serif; /* Open Sans Font Family */
+}
