@@ -4,6 +4,7 @@ import "./App.css";
 // Components
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import TopBar from "./Components/TopBar";
 
 // Pages
 import Home from "./pages/Home";
@@ -17,6 +18,7 @@ import FAQ from "./pages/FAQ";
 function App() {
   return (
     <>
+      <TopBar />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

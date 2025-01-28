@@ -11,10 +11,11 @@
   --color-my-color7: #01ad5a; /* Status/Success */
   --color-my-color8: #f5813f; /* Status/Warning */
   --color-my-color9: #000000; /* Dark */
+  --color-my-color10: #ffffff; /* Gray Scales/White */
 
   /* Font Family's */
-  --font-family-base: "Inter", serif; /* Inter Font Family */
-  --font-family-heading: "Poppins", serif; /* Poppins Font Family */
-  --font-font-fmily3: "Roboto", serif; /* Roboto Font Family */
-  --font-font-fmily4: "Open Sans", serif; /* Open Sans Font Family */
+  --font-family-Inter: "Inter", serif; /* Inter Font Family */
+  --font-family-Poppins: "Poppins", serif; /* Poppins Font Family */
+  --font-family-Roboto: "Roboto", serif; /* Roboto Font Family */
+  --font-family-Sans: "Open Sans", serif; /* Open Sans Font Family */
 }
