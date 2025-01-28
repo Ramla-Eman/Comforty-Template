@@ -26,22 +26,22 @@ const Navbar = () => {
       <div className="hidden sm:flex w-full items-center py-4 lg:px-[13rem] sm:px-[2rem] px-1 justify-between text-my-color4 text-xl">
         <ul className="flex items-center space-x-4">
           <li>
-            <Link to="/" className=" hover:text-my-color2">
+            <Link to="/" className=" hover:text-buttons-Color active:text-buttons-Color">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" className="hover:text-my-color2">
+            <Link to="/about" className="hover:text-buttons-Color active:text-buttons-Color">
               About
             </Link>
           </li>
           <li>
-            <Link to="/product" className="hover:text-my-color2">
+            <Link to="/product" className="hover:text-buttons-Color active:text-buttons-Color">
               Products
             </Link>
           </li>
           <li>
-            <Link to="/faq" className="hover:text-my-color2">
+            <Link to="/faq" className="hover:text-buttons-Color active:text-buttons-Color">
               FAQ
             </Link>
           </li>
