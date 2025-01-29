@@ -36,10 +36,10 @@ const Navbar = () => {
       {/* Link Navbar */}
       <div
         className={`flex sm:flex-row flex-col w-full items-center py-4 lg:px-[13rem] sm:px-[2rem] px-1 sm:justify-between sm:static absolute ${
-          rightToggle ? "-right-full" : "right-0"
+          rightToggle ? "right-full" : "right-0"
         } text-my-color4 text-xl sm:bg-none bg-my-color10 sm:h-auto h-screen transition-all ease-in duration-300`}
       >
-        <ul className="flex items-center space-x-4">
+        <ul className="flex sm:flex-row flex-col items-center sm:space-x-4 sm:space-y-0 space-y-5">
           <li>
             <Link
               to="/"
