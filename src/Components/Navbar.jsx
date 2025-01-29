@@ -1,9 +1,17 @@
+import { useState } from "react";
 import React from "react";
 import { Link } from "react-router-dom";
-import { ShoppingCart, MenuIcon } from "lucide-react";
+import { ShoppingCart, MenuIcon, X } from "lucide-react";
 import logo from "../assets/Logo.png";
 
 const Navbar = () => {
+  const [rightToggle, setRightToggle] = useState(true);
+  const handleToggle = () => {
+    setRightToggle(!rightToggle);
+  };
+  const closeMenu = () => {
+    setRightToggle(!rightToggle);
+  };
   return (
     <div className="w-full bg-my-color10 font-family-Inter">
       {/* Middle navbar */}
@@ -19,18 +27,24 @@ const Navbar = () => {
           <span className="absolute -top-3 left-5 p-1 rounded-full px-3 bg-my-color3 text-my-color10">
             0
           </span>
-          <div className="sm:hidden flex">
-            <MenuIcon size={35} />
+          {/* Menu and close icon for mobile menu */}
+          <div className="sm:hidden flex" onClick={handleToggle}>
+            {rightToggle ? <MenuIcon size={35} /> : <X />}
           </div>
         </div>
       </div>
       {/* Link Navbar */}
-      <div className="hidden sm:flex w-full items-center py-4 lg:px-[13rem] sm:px-[2rem] px-1 justify-between text-my-color4 text-xl">
+      <div
+        className={`flex sm:flex-row flex-col w-full items-center py-4 lg:px-[13rem] sm:px-[2rem] px-1 sm:justify-between sm:static absolute ${
+          rightToggle ? "-right-full" : "right-0"
+        } text-my-color4 text-xl sm:bg-none bg-my-color10 sm:h-auto h-screen transition-all ease-in duration-300`}
+      >
         <ul className="flex items-center space-x-4">
           <li>
             <Link
               to="/"
               className=" hover:text-buttons-Color active:text-buttons-Color"
+              onClick={closeMenu}
             >
               Home
             </Link>
@@ -39,6 +53,7 @@ const Navbar = () => {
             <Link
               to="/about"
               className="hover:text-buttons-Color active:text-buttons-Color"
+              onClick={closeMenu}
             >
               About
             </Link>
@@ -47,6 +62,7 @@ const Navbar = () => {
             <Link
               to="/product"
               className="hover:text-buttons-Color active:text-buttons-Color"
+              onClick={closeMenu}
             >
               Products
             </Link>
@@ -55,13 +71,18 @@ const Navbar = () => {
             <Link
               to="/faq"
               className="hover:text-buttons-Color active:text-buttons-Color"
+              onClick={closeMenu}
             >
               FAQ
             </Link>
           </li>
         </ul>
         <div>
-          <Link to="/contact" className="hover:text-my-color2">
+          <Link
+            to="/contact"
+            className="hover:text-buttons-Color active:text-buttons-Color"
+            onClick={closeMenu}
+          >
             Contact: <span className="text-text-color">+92 312 0306090</span>
           </Link>
         </div>
