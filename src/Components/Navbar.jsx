@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div className="w-full bg-my-color10 font-family-Inter">
       {/* Middle navbar */}
-      <div className="flex w-full items-center py-4 lg:px-[13rem] sm:px-[2rem] px-1 justify-between text-text-color">
+      <div className="flex w-full items-center py-4 xl:px-[13rem] px-3 justify-between text-text-color">
         <div className="flex items-center space-x-2">
           <img src={logo} alt="Logo Comforty" />
           <h3 className="text-[2rem] font-bold">Comforty</h3>
@@ -35,7 +35,7 @@ const Navbar = () => {
       </div>
       {/* Link Navbar */}
       <div
-        className={`flex sm:flex-row flex-col w-full items-center py-4 lg:px-[13rem] sm:px-[2rem] px-1 sm:justify-between sm:static absolute ${
+        className={`flex sm:flex-row flex-col w-full items-center py-4  xl:px-[13rem] px-3 sm:justify-between sm:static absolute ${
           rightToggle ? "right-full" : "right-0"
         } text-my-color4 text-xl sm:bg-none bg-my-color10 sm:h-auto h-screen transition-all ease-in duration-300`}
       >

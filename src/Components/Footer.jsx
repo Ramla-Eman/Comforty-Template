@@ -6,7 +6,7 @@ import { FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col w-full border py-6 space-y-8 xl:px-[13rem] px-3">
+    <footer className="flex flex-col w-full py-6 space-y-8 xl:px-[13rem] px-3">
       <div className="w-full flex flex-wrap md:flex-row flex-col md:items-start items-center justify-between md:text-start text-center font-family-Inter">
         <div className="md:w-[20%] flex flex-col md:items-start items-center space-y-6">
           <div className="flex items-center space-x-2">
@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
         <ul className="space-y-2 md:w-[20%] w-full text-text-color">
           <li className="uppercase text-xl text-my-color5">Category</li>
-          <li><a href="#">Sifa</a></li>
+          <li><a href="#">Sofa</a></li>
           <li><a href="#">Armchair</a></li>
           <li><a href="#">Wing Chair</a></li>
           <li><a href="#">Desk Chair</a></li>
