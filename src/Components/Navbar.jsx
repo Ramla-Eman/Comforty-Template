@@ -29,7 +29,7 @@ const Navbar = () => {
           </span>
           {/* Menu and close icon for mobile menu */}
           <div className="sm:hidden flex" onClick={handleToggle}>
-            {rightToggle ? <MenuIcon size={35} /> : <X />}
+            {rightToggle ? <MenuIcon size={35} /> : <X size={35} />}
           </div>
         </div>
       </div>
