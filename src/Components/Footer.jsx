@@ -7,7 +7,7 @@ import { FaFacebook } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="flex flex-col w-full py-6 space-y-8 xl:px-[13rem] px-3">
-      <div className="w-full flex flex-wrap md:flex-row flex-col md:items-start items-center justify-between md:text-start text-center font-family-Inter">
+      <div className="w-full flex flex-wrap md:flex-row flex-col md:items-start md:space-y-0 space-y-6 items-center justify-between md:text-start text-center font-family-Inter">
         <div className="md:w-[20%] flex flex-col md:items-start items-center space-y-6">
           <div className="flex items-center space-x-2">
             <img src={logo} alt="Logo Comforty" />
