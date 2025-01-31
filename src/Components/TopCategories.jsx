@@ -22,7 +22,7 @@ const TopCategories = () => {
     },
   ];
   return (
-    <div className="w-full flex flex-col lg:items-start items-center justify-center py-4 xl:px-[13rem] px-3 font-family-Inter space-y-5">
+    <div className="w-full flex flex-col lg:items-start items-center justify-center py-10 xl:px-[13rem] px-3 font-family-Inter space-y-5">
       <h2 className="sm:text-4xl text-3xl text-text-color font-semibold">
         Top Categories
       </h2>

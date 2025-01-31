@@ -3,6 +3,7 @@ import Hero from '../Components/Hero'
 import FeauteredProducts from '../Components/FeauteredProducts'
 import TopCategories from '../Components/TopCategories'
 import HotCategory from '../Components/HotCategory'
+import Products from '../Components/Products'
 
 // Import Company Logos
 import Company1 from '../assets/Company1.png'
@@ -17,7 +18,7 @@ const Home = () => {
   return (
     <div>
       <Hero/>
-      <div className='w-full py-4 flex flex-wrap items-center space-x-2 justify-between xl:px-[13rem] px-3'>
+      <div className='w-full py-8 flex flex-wrap items-center space-x-2 justify-between xl:px-[13rem] px-3'>
         <img src={Company1} alt="Zapier Comapny Logo" />
         <img src={Company2} alt="Pipedrive Company Logo" />
         <img src={Company3} alt="CIB Bank Logo" />
@@ -29,6 +30,7 @@ const Home = () => {
       <FeauteredProducts/>
       <TopCategories/>
       <HotCategory/>
+      <Products/>
     </div>
   )
 }

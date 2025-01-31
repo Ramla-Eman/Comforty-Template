@@ -5,7 +5,6 @@ import PinkChair from "../assets/PinkChair.png";
 import OrangeChair from "../assets/OrangeChair.png";
 import { ShoppingCart } from "lucide-react";
 
-
 const Products = () => {
   const products = [
     {
@@ -29,27 +28,56 @@ const Products = () => {
       price: "$20",
       image: OffWhiteChair,
     },
+    {
+      name: "Library Stool Chair",
+      price: "$20",
+      image: WhiteChair,
+    },
+    {
+      name: "Library Stool Chair",
+      price: "$20",
+      image: PinkChair,
+      beforePrice: "$39",
+    },
+    {
+      name: "Library Stool Chair",
+      price: "$20",
+      image: OrangeChair,
+    },
+    {
+      name: "Library Stool Chair",
+      price: "$20",
+      image: OffWhiteChair,
+    },
   ];
   return (
-    <div className="w-full flex flex-col lg:items-start items-center justify-center my-10 xl:px-[13rem] px-3 font-family-Inter space-y-5">
+    <div className="w-full flex flex-col items-center justify-center py-10 xl:px-[13rem] px-3 font-family-Inter space-y-5">
       <h2 className="sm:text-4xl text-3xl text-text-color font-semibold">
-        Featured Products
+        Our Products
       </h2>
-      <ul className="w-full flex flex-wrap items-center lg:justify-between justify-center sm:space-x-6 lg:space-y-0 space-y-5">
+      <ul className="w-full flex flex-wrap items-center lg:justify-between justify-center  lg:space-y-0 space-y-5 gap-y-4">
         {products.map((product, index) => (
           <li
             key={index}
-            className="lg:w-[18%]  flex flex-col relative space-y-2"
+            className="lg:w-[23%] flex flex-col relative space-y-2"
           >
             <img src={product.image} alt={product.name} className="w-full" />
             <div className="flex w-full justify-between items-center">
               <div>
-                <h3 className="text-[1rem] text-text-color hover:text-my-color3">{product.name}</h3>
+                <h3 className="text-[1rem] text-text-color hover:text-my-color3">
+                  {product.name}
+                </h3>
                 <p className="text-lg text-text-color font-semibold">
-                  {product.price} <span className="text-[0.8rem] text-my-color5 font-normal line-through">{product.beforePrice}</span>
+                  {product.price}{" "}
+                  <span className="text-[0.8rem] text-my-color5 font-normal line-through">
+                    {product.beforePrice}
+                  </span>
                 </p>
               </div>
-              <ShoppingCart size={45} className="text-text-color p-2 rounded-md hover:bg-buttons-Color hover:text-my-color10"/>
+              <ShoppingCart
+                size={45}
+                className="text-text-color p-2 rounded-md hover:bg-buttons-Color hover:text-my-color10"
+              />
             </div>
           </li>
         ))}
