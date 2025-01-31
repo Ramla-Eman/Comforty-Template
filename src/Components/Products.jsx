@@ -5,7 +5,7 @@ import PinkChair from "../assets/PinkChair.png";
 import OrangeChair from "../assets/OrangeChair.png";
 import HotImg2 from "../assets/HotImage2.png";
 import HotImg3 from "../assets/HotImage3.png";
-import ProductImage from "../assets/product1.png";
+import ProductImage from "../assets/ProductImage.png";
 import CategoryImg1 from "../assets/CategoryImg1.png";
 import { ShoppingCart } from "lucide-react";
 
