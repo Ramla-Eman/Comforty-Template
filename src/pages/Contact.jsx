@@ -13,8 +13,9 @@ const Contact = () => {
           Hesitate!
         </p>
       </div>
-      {/* form for contact */}
+      {/* Form and additional texts */}
       <div className="w-full flex lg:flex-row flex-col items-center justify-between py-24 space-y-8 xl:px-[16rem] px-3">
+        {/* Additional Texts */}
         <div className="lg:w-[30%] w-full flex flex-col flex-wrap items-start justify-between space-y-8 px-3 font-family-Poppins">
           <div className="flex space-x-2">
             <MapPin size={35} />
@@ -46,6 +47,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        {/* form for contact */}
         <form className="lg:w-[50%] w-full flex flex-col flex-wrap items-start justify-between space-y-4 px-3 font-family-Poppins text-lg">
           <label htmlFor="name" className="text-my-color9 font-semibold">Your name</label>
           <input type="text" name="name" required placeholder="ABC" className="border w-full py-3 px-5 border-my-color5 rounded-md"/>
