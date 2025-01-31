@@ -13,7 +13,7 @@ const HotCategory = () => {
           Explore new and popular styles
         </h2>
       </div>
-      <div className="grid grid-cols-12 md:w-[90%] gap-6">
+      <div className="grid grid-cols-12 md:w-[90%] sm:gap-6 gap-2">
         <img
           src={HotImg1}
           alt=""
@@ -24,12 +24,12 @@ const HotCategory = () => {
         <img
           src={HotImg2}
           alt=""
-          className="col-span-3 row-span-1 rounded-md"
+          className="col-span-3 row-span-1 rounded-sm"
         />
         <img
           src={HotImg3}
           alt=""
-          className="col-span-3 row-span-1 rounded-md"
+          className="col-span-3 row-span-1 rounded-sm"
         />
       </div>
     </div>
