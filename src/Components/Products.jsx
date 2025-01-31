@@ -3,6 +3,10 @@ import WhiteChair from "../assets/WhiteChair.png";
 import OffWhiteChair from "../assets/OffWhiteChair.png";
 import PinkChair from "../assets/PinkChair.png";
 import OrangeChair from "../assets/OrangeChair.png";
+import HotImg2 from "../assets/HotImage2.png";
+import HotImg3 from "../assets/HotImage3.png";
+import Image from "../assets/Product1.png";
+import CategoryImg1 from "../assets/CategoryImg1.png";
 import { ShoppingCart } from "lucide-react";
 
 const Products = () => {
@@ -31,23 +35,23 @@ const Products = () => {
     {
       name: "Library Stool Chair",
       price: "$20",
-      image: WhiteChair,
+      image: CategoryImg1,
     },
     {
       name: "Library Stool Chair",
       price: "$20",
-      image: PinkChair,
+      image: HotImg2,
       beforePrice: "$39",
     },
     {
       name: "Library Stool Chair",
       price: "$20",
-      image: OrangeChair,
+      image: Image,
     },
     {
       name: "Library Stool Chair",
       price: "$20",
-      image: OffWhiteChair,
+      image: HotImg3,
     },
   ];
   return (
@@ -61,7 +65,7 @@ const Products = () => {
             key={index}
             className="lg:w-[23%] flex flex-col relative space-y-2"
           >
-            <img src={product.image} alt={product.name} className="w-full" />
+            <img src={product.image} alt={product.name} className="w-full rounded-lg" />
             <div className="flex w-full justify-between items-center">
               <div>
                 <h3 className="text-[1rem] text-text-color hover:text-my-color3">
