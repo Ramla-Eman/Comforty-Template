@@ -35,7 +35,7 @@ const Navbar = () => {
       </div>
       {/* Link Navbar */}
       <div
-        className={`flex sm:flex-row flex-col w-full items-center py-4  xl:px-[13rem] px-3 sm:justify-between sm:static absolute ${
+        className={`flex sm:flex-row flex-col w-full items-center py-4  xl:px-[13rem] px-3 z-50 sm:justify-between sm:static absolute ${
           rightToggle ? "right-full" : "right-0"
         } text-my-color4 text-xl sm:bg-none bg-my-color10 sm:h-auto h-screen transition-all ease-in duration-300`}
       >

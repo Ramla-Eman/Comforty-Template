@@ -18,6 +18,7 @@ const Home = () => {
   return (
     <div>
       <Hero/>
+      {/* Company Logos */}
       <div className='w-full py-8 flex flex-wrap items-center space-x-2 justify-between xl:px-[13rem] px-3'>
         <img src={Company1} alt="Zapier Comapny Logo" />
         <img src={Company2} alt="Pipedrive Company Logo" />
