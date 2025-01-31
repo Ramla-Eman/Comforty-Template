@@ -59,11 +59,11 @@ const Products = () => {
       <h2 className="sm:text-4xl text-3xl text-text-color font-semibold">
         Our Products
       </h2>
-      <ul className="w-full flex flex-wrap items-center lg:justify-between justify-center  lg:space-y-0 space-y-5 gap-y-4">
+      <ul className="w-full flex flex-wrap items-center lg:justify-between justify-center  lg:space-y-0 space-y-5 gap-y-8">
         {products.map((product, index) => (
           <li
             key={index}
-            className="lg:w-[23%] flex flex-col relative space-y-2"
+            className="lg:w-[23%] w-[90%] flex flex-col relative space-y-2"
           >
             <img src={product.image} alt={product.name} className="w-full rounded-lg" />
             <div className="flex w-full justify-between items-center">

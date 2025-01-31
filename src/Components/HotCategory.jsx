@@ -9,7 +9,7 @@ const HotCategory = () => {
   return (
     <div className="w-full flex md:flex-row flex-col gap-4 md:gap-0 items-center justify-center py-10 xl:px-[13rem] px-3">
       <div className="md:w-[5%] flex justify-center">
-        <h2 className="xl:text-4xl sm:text-2xl uppercase font-semibold md:rotate-90 text-nowrap text-center">
+        <h2 className="xl:text-4xl sm:text-2xl uppercase font-semibold md:rotate-90 text-nowrap text-center font-family-Roboto">
           Explore new and popular styles
         </h2>
       </div>
