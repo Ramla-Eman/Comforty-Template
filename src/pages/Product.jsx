@@ -5,7 +5,7 @@ import PinkChair from "../assets/PinkChair.png";
 import OrangeChair from "../assets/OrangeChair.png";
 import HotImg2 from "../assets/HotImage2.png";
 import HotImg3 from "../assets/HotImage3.png";
-import Image from "../assets/Product1.png";
+import ProductImage from "../assets/Product1.png";
 import CategoryImg1 from "../assets/CategoryImg1.png";
 import { ShoppingCart } from "lucide-react";
 
@@ -46,7 +46,7 @@ const Product = () => {
     {
       name: "Library Stool Chair",
       price: "$20",
-      image: Image,
+      image: ProductImage,
     },
     {
       name: "Library Stool Chair",
@@ -66,7 +66,7 @@ const Product = () => {
     {
       name: "Library Stool Chair",
       price: "$20",
-      image: Image,
+      image: ProductImage,
     },
     {
       name: "Library Stool Chair",
