@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../Components/Hero'
 import FeauteredProducts from '../Components/FeauteredProducts'
 import TopCategories from '../Components/TopCategories'
+import HotCategory from '../Components/HotCategory'
 
 // Import Company Logos
 import Company1 from '../assets/Company1.png'
@@ -27,6 +28,7 @@ const Home = () => {
       </div>
       <FeauteredProducts/>
       <TopCategories/>
+      <HotCategory/>
     </div>
   )
 }
