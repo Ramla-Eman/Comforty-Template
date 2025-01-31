@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from '../Components/Hero'
 import FeauteredProducts from '../Components/FeauteredProducts'
+import TopCategories from '../Components/TopCategories'
 
 // Import Company Logos
 import Company1 from '../assets/Company1.png'
@@ -25,6 +26,7 @@ const Home = () => {
         <img src={Company7} alt="Mozrila Company logo" />
       </div>
       <FeauteredProducts/>
+      <TopCategories/>
     </div>
   )
 }
