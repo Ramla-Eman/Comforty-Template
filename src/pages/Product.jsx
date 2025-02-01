@@ -97,7 +97,7 @@ const Product = () => {
           {products.map((product, index) => (
             <li
               key={index}
-              className="lg:w-[23%] w-[90%] flex flex-col relative space-y-2 hover:scale-125 dura-500 hover:z-50 hover:bg-my-color6 hover:p-4 hover:rounded-md hover:shadow"
+              className="lg:w-[23%] w-[90%] flex flex-col relative space-y-2"
             >
               <img
                 src={product.image}
