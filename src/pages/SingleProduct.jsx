@@ -2,6 +2,7 @@ import React from "react";
 import FeauteredProducts from "../Components/FeauteredProducts";
 import PinkChair from "../assets/PinkChair.png";
 import { ShoppingCart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const SingleProduct = () => {
   return (
@@ -16,7 +17,7 @@ const SingleProduct = () => {
           >
             $40.00
           </button>
-          <hr className="border border-[#D9D9D9]"/>
+          <hr className="border border-[#D9D9D9]" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
             tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur
@@ -25,12 +26,18 @@ const SingleProduct = () => {
           <button
             type="submit"
             className="flex text-xl font-semibold text-my-color10 bg-buttons-Color border-buttons-Color border py-2 px-6 rounded-md "
-          ><ShoppingCart/>
+          >
+            <ShoppingCart />
             Add to cart
           </button>
         </div>
       </div>
       <FeauteredProducts />
+      <div className="w-full py-4 xl:px-[13rem] px-3 flex justify-center text-text-color font-family-Roboto">
+        <Link to="/product" className="hover:underline text-2xl">
+          View All
+        </Link>
+      </div>
     </div>
   );
 };
