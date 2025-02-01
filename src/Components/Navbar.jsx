@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ShoppingCart, MenuIcon, X } from "lucide-react";
 import logo from "../assets/Logo.png";
+import { useCart } from "../CartContext";
 
 const Navbar = () => {
   const [rightToggle, setRightToggle] = useState(true);
@@ -12,6 +13,7 @@ const Navbar = () => {
   const closeMenu = () => {
     setRightToggle(!rightToggle);
   };
+  const { cartCount } = useCart();
   return (
     <div className="w-full bg-my-color10 font-family-Inter">
       {/* Middle navbar */}
@@ -25,7 +27,7 @@ const Navbar = () => {
             <ShoppingCart size={35} />
           </Link>
           <span className="absolute -top-3 left-5 p-1 rounded-full px-3 bg-my-color3 text-my-color10">
-            0
+          {cartCount}
           </span>
           {/* Menu and close icon for mobile menu */}
           <div className="sm:hidden flex" onClick={handleToggle}>
