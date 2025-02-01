@@ -15,7 +15,7 @@ const Products = () => {
     {
       id: 17,
       name: "Library Stool Chair",
-      price: "$20",
+      price: 20,
       image: WhiteChair,
       discription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
@@ -23,7 +23,7 @@ const Products = () => {
     {
       id: 18,
       name: "Library Stool Chair",
-      price: "$20",
+      price: 20,
       image: PinkChair,
       beforePrice: "$39",
       discription:
@@ -32,7 +32,7 @@ const Products = () => {
     {
       id: 19,
       name: "Library Stool Chair",
-      price: "$20",
+      price: 20,
       image: OrangeChair,
       discription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
@@ -40,7 +40,7 @@ const Products = () => {
     {
       id: 20,
       name: "Library Stool Chair",
-      price: "$20",
+      price: 20,
       image: OffWhiteChair,
       discription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
@@ -48,7 +48,7 @@ const Products = () => {
     {
       id: 21,
       name: "Library Stool Chair",
-      price: "$20",
+      price: 20,
       image: CategoryImg1,
       discription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
@@ -56,7 +56,7 @@ const Products = () => {
     {
       id: 22,
       name: "Library Stool Chair",
-      price: "$20",
+      price: 20,
       image: HotImg2,
       beforePrice: "$39",
       discription:
@@ -65,7 +65,7 @@ const Products = () => {
     {
       id: 23,
       name: "Library Stool Chair",
-      price: "$20",
+      price: 20,
       image: ProductImage,
       discription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
@@ -73,7 +73,7 @@ const Products = () => {
     {
       id: 24,
       name: "Library Stool Chair",
-      price: "$20",
+      price: 20,
       image: HotImg3,
       discription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
@@ -102,7 +102,7 @@ const Products = () => {
                     {product.name}
                   </h3>
                   <p className="text-lg text-text-color font-semibold">
-                    {product.price}{" "}
+                    ${product.price}{" "}
                     <span className="text-[0.8rem] text-my-color5 font-normal line-through">
                       {product.beforePrice}
                     </span>

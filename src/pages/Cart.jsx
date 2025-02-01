@@ -28,12 +28,12 @@ const Cart = () => {
           cart.map((item) => (
             <div
               key={item.id}
-              className="w-full sm:flex-row flex-col flex border p-2 rounded-xl"
+              className="w-full sm:flex-row flex-col flex border p-2 rounded-xl space-x-4"
             >
               <img src={item.image} alt={item.name} className="w-[14rem]" />
               <div className="w-full flex justify-between">
                 <div className="flex flex-col justify-between space-y-3">
-                  <h5 className="text-lg font-semibold">{item.name}</h5>
+                  <h5 className="text-2xl font-semibold">{item.name}</h5>
                   <div className="text-gray-600">
                     <p>
                       Quantity:
@@ -89,7 +89,7 @@ const Cart = () => {
           <p>Total</p>
           <span>${total.toFixed(2)}</span>
         </div>
-        <button className="w-full bg-blue-600 text-white py-2 rounded-full text-xl">
+        <button className="w-full bg-buttons-Color text-white py-2 rounded-full text-xl">
           Check Out
         </button>
       </div>

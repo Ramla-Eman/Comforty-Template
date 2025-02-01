@@ -20,7 +20,7 @@ const SingleProduct = () => {
           <h2 className="text-3xl font-bold">{product.name}</h2>
           <div className="space-x-2">
             <button className=" text-xl font-semibold text-my-color10 bg-buttons-Color border-buttons-Color border py-2 px-5 rounded-full ">
-              {product.price}
+              ${product.price}
             </button>
             <span className="text-2xl text-my-color5 font-normal line-through">
               {product.beforePrice}

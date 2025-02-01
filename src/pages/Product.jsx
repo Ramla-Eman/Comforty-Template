@@ -15,7 +15,7 @@ const Product = () => {
     {
       id: 1,
       name: "Library Stool Chair",
-      price: "$20",
+      price: 20,
       image: WhiteChair,
       discription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
@@ -23,7 +23,7 @@ const Product = () => {
     {
       id: 2,
       name: "Library Stool Chair",
-      price: "$20",
+      price: 20,
       image: PinkChair,
       beforePrice: "$39",
       discription:
@@ -32,7 +32,7 @@ const Product = () => {
     {
       id: 3,
       name: "Library Stool Chair",
-      price: "$20",
+      price: 20,
       image: OrangeChair,
       discription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
@@ -40,7 +40,7 @@ const Product = () => {
     {
       id: 4,
       name: "Library Stool Chair",
-      price: "$20",
+      price: 20,
       image: OffWhiteChair,
       discription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
@@ -48,7 +48,7 @@ const Product = () => {
     {
       id: 5,
       name: "Library Stool Chair",
-      price: "$20",
+      price: 20,
       image: CategoryImg1,
       discription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
@@ -56,7 +56,7 @@ const Product = () => {
     {
       id: 6,
       name: "Library Stool Chair",
-      price: "$20",
+      price: 20,
       image: HotImg2,
       beforePrice: "$39",
       discription:
@@ -65,7 +65,7 @@ const Product = () => {
     {
       id: 7,
       name: "Library Stool Chair",
-      price: "$20",
+      price: 20,
       image: ProductImage,
       discription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
@@ -73,7 +73,7 @@ const Product = () => {
     {
       id: 8,
       name: "Library Stool Chair",
-      price: "$20",
+      price: 20,
       image: HotImg3,
       discription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
@@ -81,7 +81,7 @@ const Product = () => {
     {
       id: 9,
       name: "Library Stool Chair",
-      price: "$20",
+      price: 20,
       image: CategoryImg1,
       discription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
@@ -89,7 +89,7 @@ const Product = () => {
     {
       id: 10,
       name: "Library Stool Chair",
-      price: "$20",
+      price: 20,
       image: OrangeChair,
       discription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
@@ -97,7 +97,7 @@ const Product = () => {
     {
       id: 11,
       name: "Library Stool Chair",
-      price: "$20",
+      price: 20,
       image: ProductImage,
       discription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
@@ -105,7 +105,7 @@ const Product = () => {
     {
       id: 12,
       name: "Library Stool Chair",
-      price: "$20",
+      price: 20,
       image: WhiteChair,
       discription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
@@ -136,7 +136,7 @@ const Product = () => {
                       {product.name}
                     </h3>
                     <p className="text-lg text-text-color font-semibold">
-                      {product.price}{" "}
+                      ${product.price}{" "}
                       <span className="text-[0.8rem] text-my-color5 font-normal line-through">
                         {product.beforePrice}
                       </span>
