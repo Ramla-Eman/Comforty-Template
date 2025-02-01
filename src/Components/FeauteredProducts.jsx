@@ -12,22 +12,26 @@ const Products = () => {
       name: "Library Stool Chair",
       price: "$20",
       image: WhiteChair,
+      discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing"
     },
     {
       name: "Library Stool Chair",
       price: "$20",
       image: PinkChair,
       beforePrice: "$39",
+      discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing"
     },
     {
       name: "Library Stool Chair",
       price: "$20",
       image: OrangeChair,
+      discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing"
     },
     {
       name: "Library Stool Chair",
       price: "$20",
       image: OffWhiteChair,
+      discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing"
     },
   ];
   return (
@@ -39,7 +43,7 @@ const Products = () => {
         {products.map((product, index) => (
           <li
             key={index}
-            className="lg:w-[18%]  flex flex-col relative space-y-2"
+            className="lg:w-[18%]  flex flex-col relative space-y-2 hover:scale-125 dura-500 hover:z-50 hover:bg-my-color6 hover:p-4 hover:rounded-md hover:shadow"
           >
             <img src={product.image} alt={product.name} className="w-full" />
             <div className="flex w-full justify-between items-center">

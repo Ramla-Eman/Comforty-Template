@@ -15,43 +15,51 @@ const Products = () => {
       name: "Library Stool Chair",
       price: "$20",
       image: WhiteChair,
+      discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing"
     },
     {
       name: "Library Stool Chair",
       price: "$20",
       image: PinkChair,
       beforePrice: "$39",
+      discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing"
     },
     {
       name: "Library Stool Chair",
       price: "$20",
       image: OrangeChair,
+      discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing"
     },
     {
       name: "Library Stool Chair",
       price: "$20",
       image: OffWhiteChair,
+      discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing"
     },
     {
       name: "Library Stool Chair",
       price: "$20",
       image: CategoryImg1,
+      discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing"
     },
     {
       name: "Library Stool Chair",
       price: "$20",
       image: HotImg2,
       beforePrice: "$39",
+      discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing"
     },
     {
       name: "Library Stool Chair",
       price: "$20",
       image: ProductImage,
+      discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing"
     },
     {
       name: "Library Stool Chair",
       price: "$20",
       image: HotImg3,
+      discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing"
     },
   ];
   return (
@@ -63,7 +71,7 @@ const Products = () => {
         {products.map((product, index) => (
           <li
             key={index}
-            className="lg:w-[23%] w-[90%] flex flex-col relative space-y-2"
+            className="lg:w-[23%] w-[90%] flex flex-col relative space-y-2 hover:scale-125 dura-500 hover:z-50 hover:bg-my-color6 hover:p-4 hover:rounded-md hover:shadow"
           >
             <img src={product.image} alt={product.name} className="w-full rounded-lg" />
             <div className="flex w-full justify-between items-center">
