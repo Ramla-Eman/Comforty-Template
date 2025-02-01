@@ -14,22 +14,25 @@ import SingleProduct from "./pages/SingleProduct";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import FAQ from "./pages/FAQ";
+import { CartProvider } from "./CartContext.jsx";
 
 function App() {
   return (
     <>
-      <TopBar />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/product/:id" element={<SingleProduct />} /> 
-        <Route path="/product" element={<Product />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/faq" element={<FAQ />} />
-      </Routes>
-      <Footer />
+      <CartProvider>
+        <TopBar />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/product/:id" element={<SingleProduct />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/faq" element={<FAQ />} />
+        </Routes>
+        <Footer />
+      </CartProvider>
     </>
   );
 }

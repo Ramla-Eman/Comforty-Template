@@ -3,12 +3,15 @@ import FeauteredProducts from "../Components/FeauteredProducts";
 import { ShoppingCart } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { useCart } from "../CartContext.jsx";
 
 const SingleProduct = () => {
+  const { addToCart } = useCart();
   const location = useLocation();
   const product = location.state?.product;
 
-  if (!product) return <h2 className="text-center">Product not found!</h2>;
+  if (!product) return <h2>Product not found!</h2>;
+
   return (
     <div>
       <div className="flex sm:flex-row flex-col lg:space-y-0 space-y-5 space-x-5 w-full items-center py-4 xl:px-[13rem] px-3 my-16 justify-center font-family-Inter">
@@ -26,7 +29,7 @@ const SingleProduct = () => {
           <hr className="border border-[#D9D9D9]" />
           <p>{product.discription}</p>
           <button
-            type="submit"
+             onClick={() => addToCart(product)}
             className="flex text-xl font-semibold text-my-color10 bg-buttons-Color border-buttons-Color border py-2 px-6 rounded-md "
           >
             <ShoppingCart />
