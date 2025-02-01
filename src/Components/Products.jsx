@@ -8,58 +8,75 @@ import HotImg3 from "../assets/HotImage3.png";
 import ProductImage from "../assets/ProductImage.png";
 import CategoryImg1 from "../assets/CategoryImg1.png";
 import { ShoppingCart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Products = () => {
   const products = [
     {
+      id: 17,
       name: "Library Stool Chair",
       price: "$20",
       image: WhiteChair,
-      discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing"
+      discription:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
     },
     {
+      id: 18,
       name: "Library Stool Chair",
       price: "$20",
       image: PinkChair,
       beforePrice: "$39",
-      discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing"
+      discription:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
     },
     {
+      id: 19,
       name: "Library Stool Chair",
       price: "$20",
       image: OrangeChair,
-      discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing"
+      discription:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
     },
     {
+      id: 20,
       name: "Library Stool Chair",
       price: "$20",
       image: OffWhiteChair,
-      discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing"
+      discription:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
     },
     {
+      id: 21,
       name: "Library Stool Chair",
       price: "$20",
       image: CategoryImg1,
-      discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing"
+      discription:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
     },
     {
+      id: 22,
       name: "Library Stool Chair",
       price: "$20",
       image: HotImg2,
       beforePrice: "$39",
-      discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing"
+      discription:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
     },
     {
+      id: 23,
       name: "Library Stool Chair",
       price: "$20",
       image: ProductImage,
-      discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing"
+      discription:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
     },
     {
+      id: 24,
       name: "Library Stool Chair",
       price: "$20",
       image: HotImg3,
-      discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing"
+      discription:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
     },
   ];
   return (
@@ -68,29 +85,35 @@ const Products = () => {
         Our Products
       </h2>
       <ul className="w-full flex flex-wrap items-center lg:justify-between justify-center  lg:space-y-0 space-y-5 gap-y-8">
-        {products.map((product, index) => (
+        {products.map((product) => (
           <li
-            key={index}
+            key={product.id}
             className="lg:w-[23%] w-[90%] flex flex-col relative space-y-2"
           >
-            <img src={product.image} alt={product.name} className="w-full rounded-lg" />
-            <div className="flex w-full justify-between items-center">
-              <div>
-                <h3 className="text-[1rem] text-text-color hover:text-my-color3">
-                  {product.name}
-                </h3>
-                <p className="text-lg text-text-color font-semibold">
-                  {product.price}{" "}
-                  <span className="text-[0.8rem] text-my-color5 font-normal line-through">
-                    {product.beforePrice}
-                  </span>
-                </p>
-              </div>
-              <ShoppingCart
-                size={45}
-                className="text-text-color p-2 rounded-md hover:bg-buttons-Color hover:text-my-color10"
+            <Link to={`/product/${product.id}`} state={{ product }}>
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full rounded-lg"
               />
-            </div>
+              <div className="flex w-full justify-between items-center">
+                <div>
+                  <h3 className="text-[1rem] text-text-color hover:text-my-color3">
+                    {product.name}
+                  </h3>
+                  <p className="text-lg text-text-color font-semibold">
+                    {product.price}{" "}
+                    <span className="text-[0.8rem] text-my-color5 font-normal line-through">
+                      {product.beforePrice}
+                    </span>
+                  </p>
+                </div>
+                <ShoppingCart
+                  size={45}
+                  className="text-text-color p-2 rounded-md hover:bg-buttons-Color hover:text-my-color10"
+                />
+              </div>
+            </Link>
           </li>
         ))}
       </ul>
