@@ -16,10 +16,10 @@ const Navbar = () => {
     <div className="w-full bg-my-color10 font-family-Inter">
       {/* Middle navbar */}
       <div className="flex w-full items-center py-4 xl:px-[13rem] px-3 justify-between text-text-color">
-        <div className="flex items-center space-x-2">
+        <Link to="/" className="flex items-center space-x-2">
           <img src={logo} alt="Logo Comforty" />
           <h3 className="text-[2rem] font-bold">Comforty</h3>
-        </div>
+        </Link>
         <div className="flex items-center space-x-4 relative">
           <Link to="/cart">
             <ShoppingCart size={35} />
