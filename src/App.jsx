@@ -15,8 +15,6 @@ import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import FAQ from "./pages/FAQ";
 import { CartProvider } from "./CartContext.jsx";
-import SignUp from "./pages/SignUp.jsx";
-import Login from "./pages/Login.jsx";
 
 function App() {
   return (
@@ -32,8 +30,6 @@ function App() {
           <Route path="/product" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/faq" element={<FAQ />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
       </CartProvider>

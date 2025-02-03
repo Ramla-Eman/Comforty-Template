@@ -9,58 +9,64 @@ import ProductImage from "../assets/ProductImage.png";
 import CategoryImg1 from "../assets/CategoryImg1.png";
 import { ShoppingCart } from "lucide-react";
 import { Link } from "react-router-dom";
+import SofaProduct1 from "../assets/SofaProduct1.webp"
+import SofaProduct2 from "../assets/SofaProduct2.webp"
+import SofaProduct3 from "../assets/SofaProduct3.webp"
+import SofaProduct4 from "../assets/SofaProduct4.webp"
+import SofaProduct5 from "../assets/SofaProduct5.webp"
+import SofaProduct6 from "../assets/SofaProduct6.webp"
 
 const Product = () => {
   const products = [
+    // Sofa's
     {
       id: 1,
-      name: "Library Stool Chair",
-      price: 20,
-      image: WhiteChair,
+      name: "Caroline Sofa",
+      price: 205,
+      image: SofaProduct1,
       discription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Upholstered in soft fabric, the sofa embraces rolled arms, a sheltering back and a bench seat cushion snuggled into its rounded and well-padded frame. The solid wood legs rise up to provide a warm contrast to the lustrous upholstery.",
     },
     {
       id: 2,
-      name: "Library Stool Chair",
-      price: 20,
-      image: PinkChair,
-      beforePrice: "$39",
+      name: "Lara Sofa - 3 Seater",
+      price: 360,
+      image: SofaProduct2,
+      beforePrice: "$390",
       discription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "The Lara Sofa, a timeless blend of design and comfort. Its spacious seating and plush cushions make it perfect for everyday living. Crafted with quality fabric upholstery and oak detailed frame, it's both durable and easy to maintain. Lara's classic tapered arms, legs, and subtle tones effortlessly complement any interior. Elevate your space with a touch of mid-century modern chic from our Lara collection",
     },
     {
       id: 3,
-      name: "Library Stool Chair",
-      price: 20,
-      image: OrangeChair,
+      name: "Aria Sofa - 3 Seater",
+      price: 470,
+      image: SofaProduct3,
       discription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "The fabulous Aria Sofa, upholstered in luxurious white bouclé fabric, exudes a touch of decadence. With its distinctive silhouette featuring soft curves and long horizontal lines, it adds elegance to any space. Cushioned with high-quality foam and built on a durable commercial plywood and solid wood structure, this sofa includes two square cushions for added comfort and style.",
     },
     {
       id: 4,
-      name: "Library Stool Chair",
-      price: 20,
-      image: OffWhiteChair,
+      name: "Aria Single Sofa",
+      price: 390,
+      image: SofaProduct4,
       discription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "The fabulous Aria Sofa, upholstered in luxurious white bouclé fabric, exudes a touch of decadence. With its distinctive silhouette featuring soft curves and long horizontal lines, it adds elegance to any space. Cushioned with high-quality foam and built on a durable commercial plywood and solid wood structure, this sofa includes two square cushions for added comfort and style.",
     },
     {
       id: 5,
-      name: "Library Stool Chair",
-      price: 20,
-      image: CategoryImg1,
+      name: "Clayton Saddle Sofa",
+      price: 780,
+      image: SofaProduct5,
       discription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Clayton Saddle sofa hand-upholstered in leatherette, has a slim, distinct & edgy profile. The gold accent legs squarely braces the supremely plush seat.",
     },
     {
       id: 6,
-      name: "Library Stool Chair",
-      price: 20,
-      image: HotImg2,
-      beforePrice: "$39",
+      name: "Gaia Sofa Bed",
+      price: 200,
+      image: SofaProduct6,
       discription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "The Gaia sofa bed is a novel addition to compact rooms. Comfortable and multifunctional, the sofa cum bed has dense padding upholstered with premium fabric, with a side pocket and a supportive armrest making it an ideal choice for guests' rooms and home library.",
     },
     {
       id: 7,
